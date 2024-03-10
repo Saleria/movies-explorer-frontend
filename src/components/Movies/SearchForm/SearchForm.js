@@ -1,4 +1,5 @@
 import React from "react";
+import FilterCheckbox from "../FilterCheckbox/FilterCheckbox";
 
 function SearchForm () {
     return(
@@ -12,6 +13,7 @@ function SearchForm () {
                     <button className="search__button">Поиск</button>
                 </fieldset>
                 <span className="search__error"></span>
+                <FilterCheckbox />
             </form>
         </div>
     );

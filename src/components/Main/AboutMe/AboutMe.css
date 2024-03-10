@@ -20,6 +20,25 @@
     }
 }
 
+.about__title {
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    color: rgba(255, 255, 255, 1);
+    padding: 0 0 23px 0;
+    border-bottom: 1px solid rgba(218, 218, 218, 1);
+    max-width: 100%;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .about__title {
+        font-size: 18px;
+        padding-bottom: 28px;
+    }
+}
+
 .about__container {
     display: flex;
     justify-content: space-between;
@@ -29,6 +48,7 @@
     .about__container {
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
     }
 }
 
@@ -38,17 +58,18 @@
 
 @media screen and (max-width: 1024px) {
     .about__description {
-        max-width: 364px;
+       margin: 0 49px 0 0;
     }
 }
 
 @media screen and (max-width: 767px) {
     .about__description {
         max-width: 292px;
+        margin: 0;   
     }
 }
 
-.about__title {
+.about__subtitle {
     font-size: 50px;
     font-weight: 400;
     line-height: 1.16;
@@ -58,21 +79,21 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .about__title {
+    .about__subtitle {
         font-size: 40px;
         line-height: 1;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .about__title {
+    .about__subtitle {
         font-size: 30px;
         line-height: 1.2;
         margin: 40px 0 0;
     }
 }
 
-.about__subtitle {
+.about__subscription {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.1;
@@ -81,7 +102,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .about__subtitle {
+    .about__subscription {
         font-size: 12px;
         line-height: 1.5;
         margin: 16px 0 20px;
@@ -89,7 +110,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .about__subtitle {
+    .about__subscription {
         font-size: 11px;
         margin: 20px 0 20px;
     }
@@ -119,7 +140,7 @@
 }
 
 .about__avatar {
-    max-width: 270px;
+    width: 270px;
     height: 327px;
     border-radius: 10px;
     margin-top: 66px;
@@ -127,14 +148,14 @@
 
 @media screen and (max-width: 1024px) {
     .about__avatar {
-        max-width: 255px;
+        width: 255px;
         height: 307px;
     }
 }
 
 @media screen and (max-width: 767px) {
     .about__avatar {
-        max-width: 292px;
+        width: 292px;
         height: 352px;
     }
 }

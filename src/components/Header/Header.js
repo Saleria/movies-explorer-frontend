@@ -6,7 +6,7 @@ import Navigation from "../Navigation/Navigation";
 function Header({ isLogged, isOpen }) {
     const { pathname } = useLocation();
     const [width, setWidth] = React.useState(window.innerWidth);
-    const breakpoint = 1024;
+    const breakpoint = 768;
     React.useEffect(() => {
         const handleResizeWindow = () => setWidth(window.innerWidth);
         window.addEventListener("resize", handleResizeWindow);
@@ -18,11 +18,15 @@ function Header({ isLogged, isOpen }) {
         return (!isLogged ? (<header className={
             pathname === "/" ? "header" : "header header_black" &&
                 pathname === "/signin" ? "header__disable" : pathname === "/" ? "header" : "header header_black" &&
-                    pathname === "/signup" ? "header__disable" : pathname === "/" ? "header" : "header header_black"}>
+                    pathname === "/signup" ? "header__disable" : pathname === "/" ? "header" : "header header_black" &&
+                        pathname === "/*" ? "header__disable" : pathname === "/" ? "header" : "header header_black"}>
             <div className="header__container">
-                <img src={logo}
-                    alt="Логотип С"
-                    className="header__logo" />
+                <Link to="/"
+                    className="header__logo">
+                    <img src={logo}
+                        alt="Логотип С"
+                        className="header__logo-img" />
+                </Link>
                 <ul className="header__links">
                     <li className="header__register">
                         <Link to="/signup"
@@ -33,7 +37,7 @@ function Header({ isLogged, isOpen }) {
                     <li className="header__enter">
                         <Link to="/sigin"
                             className="header__enter-text">
-                            Вход
+                            Войти
                         </Link>
                     </li>
                 </ul>
@@ -41,11 +45,15 @@ function Header({ isLogged, isOpen }) {
         </header>) : (<header className={
             pathname === "/" ? "header" : "header header_black" &&
                 pathname === "/signin" ? "header__disable" : pathname === "/" ? "header" : "header header_black" &&
-                    pathname === "/signup" ? "header__disable" : pathname === "/" ? "header" : "header header_black"}>
+                    pathname === "/signup" ? "header__disable" : pathname === "/" ? "header" : "header header_black" &&
+                        pathname === "/*" ? "header__disable" : pathname === "/" ? "header" : "header header_black"}>
             <div className="header__container">
-                <img src={logo}
-                    alt="Логотип С"
-                    className="header__logo" />
+                <Link to="/"
+                    className="header__logo">
+                    <img src={logo}
+                        alt="Логотип С"
+                        className="header__logo-img" />
+                </Link>
                 <button className={
                     pathname === "/" ? "header__open-menu" : "header__open-menu header__open-menu_black"}
                     type="button"
@@ -57,11 +65,15 @@ function Header({ isLogged, isOpen }) {
         !isLogged ? (<header className={
             pathname === "/" ? "header" : "header header_black" &&
                 pathname === "/signin" ? "header__disable" : pathname === "/" ? "header" : "header header_black" &&
-                    pathname === "/signup" ? "header__disable" : pathname === "/" ? "header" : "header header_black"}>
+                    pathname === "/signup" ? "header__disable" : pathname === "/" ? "header" : "header header_black" &&
+                        pathname === "/*" ? "header__disable" : pathname === "/" ? "header" : "header header_black"}>
             <div className="header__container">
-                <img src={logo}
-                    alt="Логотип С"
-                    className="header__logo" />
+                <Link to="/"
+                    className="header__logo">
+                    <img src={logo}
+                        alt="Логотип С"
+                        className="header__logo-img" />
+                </Link>
                 <ul className="header__links">
                     <li className="header__register">
                         <Link to="/signup"
@@ -72,7 +84,7 @@ function Header({ isLogged, isOpen }) {
                     <li className="header__enter">
                         <Link to="/signin"
                             className="header__enter-text">
-                            Вход
+                            Войти
                         </Link>
                     </li>
                 </ul>
@@ -80,11 +92,15 @@ function Header({ isLogged, isOpen }) {
         </header>) : (<header className={
             pathname === "/" ? "header" : "header header_black" &&
                 pathname === "/signin" ? "header__disable" : pathname === "/" ? "header" : "header header_black" &&
-                    pathname === "/signup" ? "header__disable" : pathname === "/" ? "header" : "header header_black"}>
+                    pathname === "/signup" ? "header__disable" : pathname === "/" ? "header" : "header header_black" &&
+                        pathname === "/*" ? "header__disable" : pathname === "/" ? "header" : "header header_black"}>
             <div className="header__container">
-                <img src={logo}
-                    alt="Логотип С"
-                    className="header__logo" />
+                <Link to="/"
+                    className="header__logo">
+                    <img src={logo}
+                        alt="Логотип С"
+                        className="header__logo-img" />
+                </Link>
                 {<Navigation />}
             </div>
         </header>

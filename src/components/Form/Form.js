@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../../images/logo.svg"
 
 function Form({
@@ -12,10 +13,13 @@ function Form({
     return (
         <section className="form">
             <div className="form__container">
-                <img className="form__img"
-                    src={logo}
-                    alt="логотип буква С в зеленом круге" />
-                <h2 className="form__title">{title}</h2>
+                <Link to="/"
+                    className="form__logo">
+                    <img src={logo}
+                        alt="Логотип С"
+                        className="form__img" />
+                </Link>
+                <h1 className="form__title">{title}</h1>
                 <form className="form__shell">
                     <fieldset className="form__info">
                         {children}

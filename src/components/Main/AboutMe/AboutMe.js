@@ -4,15 +4,15 @@ import avatar from "../../../images/avatarMe.png";
 function AboutMe() {
     return (
         <section className="about">
-            <h2 className="project__title">
+            <h2 className="about__title">
                 Студент
             </h2>
             <div className="about__container">
                 <div className="about__description">
-                    <h3 className="about__title">
+                    <h3 className="about__subtitle">
                         Валерия
                     </h3>
-                    <p className="about__subtitle">
+                    <p className="about__subscription">
                         Фронтенд-разработчик, 35 лет
                     </p>
                     <p className="about__text">

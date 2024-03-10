@@ -1,19 +1,30 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
-        <section className="footer">
+        <footer className="footer">
             <h4 className="footer__title">
                 Учебный проект Яндекс.Практикум х BeatFilm.
             </h4>
             <div className="footer__container">
                 <p className="footer__info">© 2024</p>
                 <div className="footer__platform">
-                <p className="footer__info">Яндекс.Практикум</p>
-                <p className="footer__info">Github</p>
+                    <a className="footer__info footer__info-link"
+                        href="https://practicum.yandex.ru/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Яндекс.Практикум
+                    </a>
+                    <a className="footer__info footer__info-link"
+                        href="https://github.com/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Github
+                    </a>
                 </div>
             </div>
-        </section>
+        </footer>
     );
 }
 

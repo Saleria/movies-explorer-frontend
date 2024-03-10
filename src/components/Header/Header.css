@@ -32,7 +32,18 @@
 
 .header__logo {
     max-width: 38px;
-    padding: 18px 0 18px;
+    margin: 18px 0 18px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.header__logo:hover {
+    transition: all .3s linear;
+    opacity: .6;
+}
+
+.header__logo-img {
+    max-width: 100%;
 }
 
 .header__links {
@@ -49,6 +60,13 @@
     padding: 0 30px 0 0;
 }
 
+@media screen and (max-width: 767px) {
+    .header__register {
+        font-size: 10px;
+        padding: 0 14px 0 0;
+    }
+}
+
 .header__register-text {
     color: rgba(255, 255, 255, 1);
     font-weight: 400;
@@ -62,6 +80,13 @@
 .header__register-text:hover {
     transition: all .3s linear;
     opacity: .6;
+}
+
+@media screen and (max-width: 767px) {
+    .header__register-text {
+        font-size: 10px;
+        line-height: 1.6;
+    }
 }
 
 .header__enter {
@@ -80,6 +105,14 @@
     padding: 8px 20px;
     transition: all .3s linear;
     cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .header__enter-text {
+        font-size: 10px;
+        line-height: 1.6;
+        padding: 5px 12px;
+    }
 }
 
 .header__enter-text:hover {

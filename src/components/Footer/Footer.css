@@ -68,6 +68,17 @@
     }
 }
 
+.footer__info-link {
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.footer__info-link:hover {
+    transition: all .3s linear;
+    opacity: .6;
+}
+
 .footer__platform {
     display: flex;
 }

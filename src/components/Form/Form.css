@@ -26,21 +26,35 @@
     }
 }
 
-.form__img {
+.form__logo {
     width: 38px;
-    padding: 70px 0 40px;
+    height: 38px;
+    margin: 70px 0 40px;
+    padding: 0;    
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.form__logo:hover {
+    transition: all .3s linear;
+    opacity: .6;
 }
 
 @media screen and (max-width: 1024px) {
-    .form__img {
-        padding: 232px 0 40px;
+    .form__logo {
+        margin: 232px 0 40px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .form__img {       
-        padding: 56px 0 50px;
+    .form__logo {       
+        margin: 56px 0 50px;
     }
+}
+
+.form__img {
+    width: 100%;
+    padding: 0;
 }
 
 .form__title {
@@ -67,6 +81,7 @@
 
 .form__submit-button {
     background-color: rgba(66, 133, 244, 1);
+    border: none;
     border-radius: 3px;
     width: 396px;
     font-size: 14px;

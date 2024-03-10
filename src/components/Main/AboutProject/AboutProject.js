@@ -18,10 +18,10 @@ function AboutProject() {
                 </div>
             </div>
             <div className="project__plan">
-                <p className="plan__text plan__text_week">1 неделя</p>
-                <p className="plan__text plan__text_week">4 недели</p>
-                <p className="plan__text plan__text_info">Back-end</p>
-                <p className="plan__text plan__text_info">Front-end</p>
+                <p className="project__plan-text project__plan-text_week">1 неделя</p>
+                <p className="project__plan-text project__plan-text_week">4 недели</p>
+                <p className="project__plan-text project__plan-text_info">Back-end</p>
+                <p className="project__plan-text project__plan-text_info">Front-end</p>
             </div>
         </section>
     );

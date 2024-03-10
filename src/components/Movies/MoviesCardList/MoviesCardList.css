@@ -24,7 +24,7 @@
     }
 }
 
-.films_add {
+.films__add {
     width: 100%;
     background-color: rgba(47, 47, 47, 1);
     border: none;
@@ -38,7 +38,7 @@
     transition: all .3s linear;
 }
 
-.films_add:hover {
+.films__add:hover {
     transition: all .3s linear;
     opacity: .6;
 }

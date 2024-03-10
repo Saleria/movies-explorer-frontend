@@ -1,0 +1,146 @@
+.form {
+    width: 100%;
+    background-color: rgba(32, 32, 32, 1);
+    box-sizing: border-box;
+    padding-bottom: 70px;
+}
+
+@media screen and (max-width: 767px) {
+    .form {
+       padding-bottom: 30px;
+    }
+}
+
+.form__container {
+    max-width: 396px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+    .form__container {
+        max-width: 320px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.form__img {
+    width: 38px;
+    padding: 70px 0 40px;
+}
+
+@media screen and (max-width: 1024px) {
+    .form__img {
+        padding: 232px 0 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .form__img {       
+        padding: 56px 0 50px;
+    }
+}
+
+.form__title {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 0 0 40px;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .form__title {
+        padding-bottom: 80px;
+    }
+}
+
+.form__info {
+    border: none;
+    margin: 0;
+    padding: 0;
+    min-height: 266px;
+}
+
+.form__submit-button {
+    background-color: rgba(66, 133, 244, 1);
+    border-radius: 3px;
+    width: 396px;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    padding: 13px 0 15px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s linear;
+    margin: 69px 0 0 0;
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+    .form__submit-button {
+        width: 260px;
+        font-size: 12px;
+        padding: 15px 0;
+        margin: 157px 0 0 0;
+    }
+}
+
+.form__submit-button:hover {
+    transition: all .3s linear;
+    opacity: .6;
+}
+
+.form__enter {
+    margin: 16px 0 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .form__enter {
+        margin-top: 14px;
+    }
+}
+
+.form__label {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .form__label {
+        font-size: 12px;
+    }
+}
+
+.form__button-enter {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: rgba(66, 133, 244, 1);
+    background-color: rgba(32, 32, 32, 1);
+    border: none;
+    cursor: pointer;
+    transition: all .3s linear;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .form__button-enter {
+        font-size: 12px;
+    }
+}
+
+.form__button-enter:hover {
+    transition: all .3s linear;
+    opacity: .6;
+}

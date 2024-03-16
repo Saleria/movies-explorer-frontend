@@ -1,0 +1,59 @@
+.filter {
+    margin-top: 26px;
+    display: flex;
+    border-bottom: 1px solid rgba(170, 170, 170, .2);
+    padding-bottom: 43px;
+}
+
+@media screen and (max-width: 1024px) {
+    .filter {
+        padding-bottom: 52px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .filter {
+        padding-bottom: 63px;
+    }
+}
+
+.filter__check {
+    width: 36px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: rgba(235, 235, 235, 1);
+    outline: none;
+    appearance: none;
+    background-image: url("../../../images/tumbler-on-2.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 6px left 6px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.filter__check:hover {
+    transition: all .3s linear;
+    opacity: .6;
+}
+
+.filter__check:checked {
+    background-color: rgba(43, 224, 128, 1);
+    background-position: bottom 6px right 6px;
+}
+
+.filter__title {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.38;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    padding-left: 14px;
+}
+
+@media screen and (max-width: 767px) {
+    .filter__title {
+        font-size: 11px;
+        line-height: 1.6;
+        padding-left: 13px;
+    }
+}

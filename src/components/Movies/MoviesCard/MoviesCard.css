@@ -1,0 +1,142 @@
+.film {
+    max-width: 100%;
+    background-color: rgba(34, 34, 34, 1);
+}
+
+@media screen and (max-width: 1024px) {
+    .film {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .film {
+        max-width: 100%;
+    }
+}
+
+.film__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 18px;
+}
+
+@media screen and (max-width: 767px) {
+    .film__container {
+        padding: 14px 14px;
+    }
+}
+
+.film__title {
+    max-width: 240px;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    margin: 0 14px 0 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .film__title {
+        max-width: 224px;
+        margin: 0 12px 0 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .film__title {
+        font-size: 12px;
+        line-height: 1.5;
+        max-width: 200px;
+        margin: 0 22px 0 0;
+    }
+}
+
+.film__time {
+    max-width: 70px;
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .film__time {
+        max-width: 50px;
+        font-size: 10px;
+        line-height: 1.8;
+    }
+}
+
+.film__img {
+    width: 100%;
+    margin: 0;
+}
+
+.film__button {
+    width: 100px;
+    min-height: 29px;
+    background-color: rgba(49, 49, 49, 1);
+    border: none;
+    border-radius: 30px;
+    padding: 9px 15px;
+    margin: 18px auto;
+    transition: all .3s linear;
+    cursor: pointer;
+    background-image: url("../../../images/button-text.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+    .film__button {
+        margin: 14px auto;
+    }
+}
+
+.film__button:hover {
+    transition: all .3s linear;
+    opacity: .6;
+}
+
+.film__button_active {
+    background-color: rgba(238, 52, 101, 1);
+    background-image: url('../../../images/save_active.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.film__button-delete {
+    width: 100px;
+    min-height: 29px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(49, 49, 49, 1);
+    border: none;
+    border-radius: 30px;
+    padding: 9px 15px;
+    margin: 18px auto;
+    display: block;
+    transition: all .3s linear;
+    cursor: pointer;
+    background-image: url('../../../images/icon-del.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+    .film__button-delete {
+        margin: 14px auto;
+    }
+}
+
+.film__button-delete:hover {
+    transition: all .3s linear;
+    opacity: .6;
+}

@@ -1,0 +1,145 @@
+.profile {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: rgba(32, 32, 32, 1);
+}
+
+.profile__title {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 auto;
+    padding: 74px 0 123px;
+}
+
+@media screen and (max-width: 1024px) {
+    .profile__title {
+        padding: 236px 0 96px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .profile__title {
+        padding: 70px 0 80px;
+    }
+}
+
+.profile__form {
+    max-width: 410px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+    .profile__form {
+        max-width: 260px;
+    }
+}
+
+.profile__info {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.profile__shell {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 16px 0;
+}
+
+.profile__shell:first-child {
+    border-bottom: 1px solid rgba(66, 66, 66, 1);
+}
+
+.profile__shell:last-child {
+    padding-top: 17px;
+}
+
+.profile__label {
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    width: 141px;
+    padding: 0 147px 0 0;
+}
+
+@media screen and (max-width: 767px) {
+    .profile__label {
+        width: 130px;
+        padding-right: 10px;
+    }
+}
+
+.profile__text {
+    background-color: rgba(32, 32, 32, 1);
+    border: none;
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    text-align: right;
+    width: 122px;
+}
+
+.profile__text:focus {
+    border-bottom: 1px solid rgba(52, 86, 243, 1);
+    outline: none;
+}
+
+
+.profile__form-button {
+    background-color: rgba(32, 32, 32, 1);
+    border: none;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    margin: 204px 0 0 0;
+    padding: 0;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+@media screen and (max-width: 1024px) {
+    .profile__form-button {
+        margin: 194px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .profile__form-button {
+        margin-top: 379px;
+        padding: 0;
+        cursor: pointer;
+        transition: all .3s linear;
+    }
+}
+
+.profile__form-button:hover {
+    transition: all .3s linear;
+    opacity: .6;
+}
+
+.profile__form-button-exit {
+    background-color: rgba(32, 32, 32, 1);
+    border: none;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: rgba(238, 52, 101, 1);
+    margin: 16px 0 0 0;
+    padding: 0;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.profile__form-button-exit:hover {
+    transition: all .3s linear;
+    opacity: .6;
+}

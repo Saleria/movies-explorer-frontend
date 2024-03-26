@@ -1,11 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function Profile() {
+function Profile({isExit, onUpdateUser}) {
     const navigate = useNavigate();
-    function isExit() {
-        navigate("/signin", { replace: true })
-    }
+    
     const [name, setName] = React.useState('Виталий');
     const [email, setEmail] = React.useState('pochta@yandex.ru');
 
@@ -57,7 +55,9 @@ function Profile() {
                                 id="text-name-error"></span>
                         </div>
                     </fieldset>
-                    <button className="profile__form-button">
+                    <button className="profile__form-button"
+                        type="submit"
+                        onSubmit={onUpdateUser}>
                         Редактировать
                     </button>
                     <button className="profile__form-button-exit"

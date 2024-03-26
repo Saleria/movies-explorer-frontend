@@ -20,12 +20,12 @@ function Form({
                         className="form__img" />
                 </Link>
                 <h1 className="form__title">{title}</h1>
-                <form className="form__shell">
-                    <fieldset className="form__info">
+                <form className="form__shell"
+                    onSubmit={onSubmit}>
+                    <fieldset className="form__info">                        
                         {children}
                     </fieldset>
-                    <button className="form__submit-button" type="submit"
-                        onSubmit={onSubmit}>
+                    <button className="form__submit-button" type="submit">
                         {buttonText}
                     </button>
                     <div className="form__enter">
@@ -34,7 +34,7 @@ function Form({
                         </label>
                         <button className="form__button-enter"
                             id="button"
-                            type="submit"
+                            type="button"
                             onClick={onClick}>
                             {buttonEnterText}
                         </button>

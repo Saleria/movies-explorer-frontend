@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Form from "../Form/Form";
 
-function Login({ onSubmit }) {
+function Login({ onSubmit, handleChange, email, password }) {
     const navigate = useNavigate();
     function toRegister() {
         navigate("/signup", { replace: true });
@@ -21,9 +21,11 @@ function Login({ onSubmit }) {
                         E-mail
                     </label>
                     <input className="form__input"
-                        id="input-email"
-                        name="input-email"
+                        id="email"
+                        name="email"
                         placeholder="Введите Ваш email"
+                        value={email ?? ''}
+                        onChange={handleChange}
                         minLength="2"
                         maxLength="50"
                         type="email"
@@ -33,9 +35,11 @@ function Login({ onSubmit }) {
                         Пароль
                     </label>
                     <input className="form__input"
-                        id="input-password"
-                        name="input-password"
+                        id="password"
+                        name="password"
                         placeholder="Введите пароль"
+                        value={password ?? ''}
+                        onChange={handleChange}
                         minLength="8"
                         type="password"
                         required />

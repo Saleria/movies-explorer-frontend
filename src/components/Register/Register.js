@@ -2,12 +2,11 @@ import React from "react";
 import Form from "../Form/Form";
 import { useNavigate } from "react-router-dom";
 
-function Register() {
+function Register({onSubmit, handleChange, name, email, password}) {
     const navigate = useNavigate();
-    function toEnter() {
+    function toLogin() {
         navigate("/signin", { replace: true });
     }
-
     return (
         <main>
             <Form
@@ -15,15 +14,18 @@ function Register() {
                 buttonText="Зарегистрироваться"
                 lableText="Уже зарегистрированы?"
                 buttonEnterText="Войти"
-                onClick={toEnter}>
+                onClick={toLogin}
+                onSubmit={onSubmit}>
                 <div className="form__block">
                     <label className="form__input-lable" htmlFor="input-name">
                         Имя
                     </label>
                     <input className="form__input"
-                        id="input-name"
-                        name="input-name"
+                        id="name"
+                        name="name"
                         placeholder="Введите Ваше имя"
+                        onChange={handleChange}
+                        value={name ?? ''}
                         minLength="2"
                         maxLength="30"
                         type="text"
@@ -33,9 +35,11 @@ function Register() {
                         E-mail
                     </label>
                     <input className="form__input"
-                        id="input-email"
-                        name="input-email"
+                        id="email"
+                        name="email"
                         placeholder="Введите Ваш email"
+                        onChange={handleChange}
+                        value={email ?? ''}
                         minLength="2"
                         maxLength="50"
                         type="email"
@@ -45,9 +49,11 @@ function Register() {
                         Пароль
                     </label>
                     <input className="form__input"
-                        id="input-password"
-                        name="input-password"
+                        id="password"
+                        name="password"
                         placeholder="Введите пароль"
+                        onChange={handleChange}
+                        value={password ?? ''}
                         minLength="8"
                         type="password"
                         required />

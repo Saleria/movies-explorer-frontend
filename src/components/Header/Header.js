@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import logo from "../../images/logo.svg";
 import Navigation from "../Navigation/Navigation";
 
-function Header({ isLogged, isOpen }) {
+function Header({ isLoggedIn, isOpen }) {
     const { pathname } = useLocation();
     const [width, setWidth] = React.useState(window.innerWidth);
     const breakpoint = 768;
@@ -15,7 +15,7 @@ function Header({ isLogged, isOpen }) {
         };
     }, []);
     if (width < breakpoint) {
-        return (!isLogged ? (<header className={
+        return (!isLoggedIn ? (<header className={
             pathname === "/" ? "header" : "header header_black" &&
                 pathname === "/signin" ? "header__disable" : pathname === "/" ? "header" : "header header_black" &&
                     pathname === "/signup" ? "header__disable" : pathname === "/" ? "header" : "header header_black" &&
@@ -62,7 +62,7 @@ function Header({ isLogged, isOpen }) {
         </header>))
     }
     return (
-        !isLogged ? (<header className={
+        !isLoggedIn ? (<header className={
             pathname === "/" ? "header" : "header header_black" &&
                 pathname === "/signin" ? "header__disable" : pathname === "/" ? "header" : "header header_black" &&
                     pathname === "/signup" ? "header__disable" : pathname === "/" ? "header" : "header header_black" &&
